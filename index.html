@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Krish Gajjar
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          gajjarkirsh@fakegmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2022/07/29/18/11/city-7352352_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Krish Gajjar! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a computer engineering enthusiast with hands-on experience in cybersecurity and AI research.
+            I have worked on securing cross-blockchain transactions and developing network security frameworks.
+            I am skilled in designing secure networks, implementing encryption protocols, and analyzing vulnerabilities in decentralized applications.
+            I enjoy exploring AI-driven security solutions and have experience with machine learning models for anomaly detection.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p> 1 year of experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>NodeJS</h6>
+            <p> 1.5 years of experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p> 4 years of experience</p>
+        </div>
+
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Personalized Mapping Application</h3>
+            <ul>
+              <li>Developed a google maps-esque application that allows for more personalized navigation for parents with curious children</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fitness App</h3>
+            <ul>
+              <li>Developed an application for people looking for a fun way to obtain a healthier lifestyle</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Web Scraper</h3>
+            <ul>
+              <li>Created a way to access, process, and store website data to be able to analyze trends in the data from different websites</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Krish is a very quick learner and quickly grasps key concepts of cybersecurity and network security. He has a great attitude & is an excellent team player. He has a curious mind and asks the right questions. He takes initiative within a team and has the potential to lead.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          He is always willing to help others and share his knowledge. His strong work ethic and commitment to excellence make him a valuable asset. He takes initiative within a team and has the potential to lead.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Krish is a fast learner who adapts quickly to new technologies and methodologies. He stays focused under pressure and consistently meets deadlines. His ability to break down complex concepts makes him an effective communicator.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you so much for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
